@@ -16,5 +16,7 @@ RUN cd /FromTi/; tar -xzpvf /FromTi/CCS12.4.0.00007_linux-x64.tar.gz
 
 COPY download/simplelink_cc2640r2_sdk_5_30_00_03.run /FromTi/simplelink_cc2640r2_sdk_5_30_00_03.run
    
+#RUN chmod +x /FromTi/simplelink_cc2640r2_sdk_5_30_00_03.run
+
 
 
