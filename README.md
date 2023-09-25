@@ -26,3 +26,7 @@ If you wish to run the caontainer once it was stoped, you can do it with the com
 ``````
 docker start -ai ccs_container
 ``````
+
+## set the compiler path
+
+/root/ti/ccs/eclipse/eclipse -nosplash -data "./" -application com.ti.common.core.initialize -ccs.toolDiscoveryPath "/root/ti/ccs/tools/compiler/"
