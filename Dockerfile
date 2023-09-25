@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu
 
   
 
@@ -16,7 +16,12 @@ RUN cd /FromTi/; tar -xzpvf /FromTi/CCS12.4.0.00007_linux-x64.tar.gz
 
 COPY download/simplelink_cc2640r2_sdk_5_30_00_03.run /FromTi/simplelink_cc2640r2_sdk_5_30_00_03.run
    
-#RUN chmod +x /FromTi/simplelink_cc2640r2_sdk_5_30_00_03.run
+# Install the SDK
+    # RUN chmod +x /FromTi/simplelink_cc2640r2_sdk_5_30_00_03.run
 
+    # RUN ./simplelink_cc2640r2_sdk_5_30_00_03.run  --unattendedmodeui none --mode unattended
 
+# Install CCS
+
+    RUN ./CCS12.4.0.00007_linux-x64/ccs_setup_12.4.0.00007.run --unattendedmodeui none --debuglevel 2 --mode unattended --enable-components PF_CC2X
 

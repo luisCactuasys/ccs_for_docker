@@ -24,5 +24,5 @@ exit
 ## Run after stopping 
 If you wish to run the caontainer once it was stoped, you can do it with the command:
 ``````
-docker start -ai css_container
+docker start -ai ccs_container
 ``````
